@@ -3,14 +3,14 @@
 Plugin Name: Recent Comments
 Plugin URI: http://dev.wp-plugins.org/browser/recent-comments/
 Description: Retrieves a list of the most recent comments.
-Version: 1.13
+Version: 1.14
 Author: Nick Momrik
 Author URI: http://mtdewvirus.com/
 */
 
 function get_recent_comments($no_comments = 5, $comment_lenth = 5, $before = '<li>', $after = '</li>', $show_pass_post = false, $comment_style = 0) {
     global $wpdb, $tablecomments, $tableposts;
-    $request = "SELECT ID, comment_ID, comment_content, comment_author, post_title FROM $tablecomments LEFT JOIN $tableposts ON $tableposts.ID=$tablecomments.comment_post_ID AND post_status = 'publish' ";
+    $request = "SELECT ID, comment_ID, comment_content, comment_author, post_title FROM $tablecomments LEFT JOIN $tableposts ON $tableposts.ID=$tablecomments.comment_post_ID WHERE post_status = 'publish' ";
 	if(!$show_pass_post) $request .= "AND post_password ='' ";
 	$request .= "AND comment_approved = '1' ORDER BY comment_ID DESC LIMIT $no_comments";
 	$comments = $wpdb->get_results($request);
