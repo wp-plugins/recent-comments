@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Recent Comments
-Plugin URI: http://mtdewvirus.com/wp-hacks/
+Plugin URI: http://dev.wp-plugins.org/browser/recent-comments/
 Description: Retrieves a list of the most recent comments.
 Version: 1.13
 Author: Nick Momrik
