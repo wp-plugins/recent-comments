@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Recent Comments
-Plugin URI: http://mtdewvirus.com/code/
+Plugin URI: http://mtdewvirus.com/code/wordpress-plugins/
 Description: Retrieves a list of the most recent comments.
 Version: 1.15
 Author: Nick Momrik
