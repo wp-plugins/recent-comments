@@ -3,7 +3,7 @@
 Plugin Name: Recent Comments
 Plugin URI: http://mtdewvirus.com/code/wordpress-plugins/
 Description: Retrieves a list of the most recent comments.
-Version: 1.15
+Version: 1.16
 Author: Nick Momrik
 Author URI: http://mtdewvirus.com/
 */
@@ -27,8 +27,7 @@ function mdv_recent_comments($no_comments = 5, $comment_lenth = 5, $before = '<l
 			$permalink = get_permalink($comment->ID)."#comment-".$comment->comment_ID;
 			if ($comment_style == 1) {
 				$post_title = stripslashes($comment->post_title);
-				$output .= $before . '<a href="' . $permalink . '" title="View the entire comment by ';
-				$output .= $comment_author.'">' . $comment_author . '</a> on ' . $post_title . '.' . $after;
+				$output .= $before . comment_author_link() . ' on ' . $post_title . '.' . $after;
 			}
 			else {
 				$output .= $before . '<strong>' . $comment_author . ':</strong> <a href="' . $permalink;
