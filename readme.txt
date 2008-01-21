@@ -1,4 +1,4 @@
-=== Recent Comments ===Contributors: mtdewvirusTags: comments, recent, listStable tag: trunkRetrieves a list of the most recent comments.== Installation ==1. Upload `recent-comments.php` to the `/wp-content/plugins/` directory1. Activate the plugin through the 'Plugins' menu in WordPress1. Place `<?php mdv_recent_comments(); ?>` in your templates.
+=== Recent Comments ===Contributors: MtDewVirusTags: comments, recent, listStable tag: trunkRetrieves a list of the most recent comments.== Installation ==1. Upload `recent-comments.php` to the `/wp-content/plugins/` directory1. Activate the plugin through the 'Plugins' menu in WordPress1. Place `<?php mdv_recent_comments(); ?>` in your templates.
 
 == Configuration ==
 You may pass parameters when calling the function to configure some of the options.
