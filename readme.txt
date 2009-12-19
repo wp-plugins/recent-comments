@@ -8,11 +8,11 @@ Retrieves a list of the most recent comments.
 == Installation ==
 1. Upload `recent-comments.php` to the `/wp-content/plugins/` directory
 1. Activate the plugin through the 'Plugins' menu in WordPress
-1. Place `<?php mdv_recent_comments(); ?>` in your templates.
+1. Place `<?php most_recent_comments(); ?>` in your templates.
 
 == Configuration ==
 You may pass parameters when calling the function to configure some of the options.
-Example: `mdv_recent_comments(10, 7, '', '<br />', true, 1, true)`
+Example: `most_recent_comments(10, 7, '', '<br />', true, 1, true)`
 
 The parameters:
 $no_comments - sets the number of recent comments to display
