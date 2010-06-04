@@ -1,5 +1,5 @@
 === Recent Comments ===
-Contributors: MtDewVirus
+Contributors: nickmomrik
 Tags: comments, recent, list
 Stable tag: trunk
 
