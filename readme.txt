@@ -19,7 +19,7 @@ Creates functions to assist in displaying a list of the most recent comments. Pr
 
 You may pass parameters when calling the function to configure some of the options. Parameters are accepted only in the [query-string-style](http://codex.wordpress.org/How_to_Pass_Tag_Parameters#Tags_with_query-string-style_parameters).
 
-**`list_most_recent_comments()`**
+= list_most_recent_comments() =
 
 In addition to the parameters that [get_comments()](http://codex.wordpress.org/Function_Reference/get_comments) and `get_most_recent_comments()` (see below) accept, this function accepts the following parameters:
 
@@ -34,7 +34,7 @@ Example:
 
 `<?php list_most_recent_comments( 'excerpt_words=5' ); ?>`
 
-**`get_most_recent_comments()`**
+= get_most_recent_comments() =
 
 A more powerful version of [get_comments()](http://codex.wordpress.org/Function_Reference/get_comments). It accepts the same parameters as well as the following ones:
 
